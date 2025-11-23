@@ -26,10 +26,11 @@
             border-radius: 20px;
             display: block;
             margin: auto;
+            margin-top: 10px;
             margin-bottom: 10px;
         }
 
-        img {
+        .logo {
             height: 250px;
             width: 250px;
             border-radius: 20px;
@@ -40,6 +41,7 @@
 
         menu {
             text-align: center;
+            margin-bottom: 15px;
         }
 
         a {
@@ -58,12 +60,27 @@
             text-decoration: underline;
         }
 
+        section > h2 {
+            text-align: center;
+            text-decoration: underline;
+            margin-bottom: 10px;
+        }
+
+        section > div {
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        section img {
+            flex: auto;
+        }
+
         footer {
             color: yellow;
             background-color: rgb(44, 44, 44);
             padding: 8px;
             border-radius: 10px;
-            margin: 20px 0 5px 0;
+            margin: 10px 0 5px 0;
         }
 
         footer > p {
@@ -75,11 +92,22 @@
     <header>
         <h1>KURINGA<br>Desenvolvimento Web</h1>
     </header>
-    <img src="imagens/logo.jpg" alt="Logotipo"><br>
-    <menu>
-        <a href="index.html">INÍCIO</a></li>
-        <a href="quem-somos.html">QUEM SOMOS</a></li>
-    </menu>
+    <main>
+        <img class="logo" src="imagens/logo.jpg" alt="Logotipo"><br>
+        <menu>
+            <a href="index.html">INÍCIO</a></li>
+            <a href="quem-somos.html">QUEM SOMOS</a></li>
+        </menu>
+        <section>
+            <h2> ** Nossos Trabalhos **</h2>
+            <div>
+                <img src="imagens/acaiteria1.jpg" alt="Imagem">
+                <img src="imagens/acaiteria2.jpg" alt="Imagem">
+                <img src="imagens/acaiteria3.jpg" alt="Imagem">
+                <img src="imagens/acaiteria4.jpg" alt="Imagem">
+            </div>    
+        </section>
+    </main>    
     <footer>
         <p>&copy;&nbsp;2025&nbsp;- Todos os direitos reservados.</p>
     </footer>
